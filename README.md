@@ -20,6 +20,8 @@ The goal of the service is to take the room dimensions, the locations of the dir
 * The final hoover position (X, Y)
 * The number of patches of dirt the robot cleaned up
 
+The service must persist every input and output to a database.
+
 ## Input
 
 Program input will be received in a json payload with the format described here.
@@ -52,7 +54,6 @@ Example (matching the input above):
 }
 ```
 Where `coords` are the final coordinates of the hoover and `patches` is the number of cleaned patches.
-Moreover, the services persists every input and output to a database.
 
 ## Deliverable
 
@@ -60,7 +61,7 @@ The service:
 
 * is a web service
 * must run on Mac OS X or Linux (x86-64) 
-* must be written in Java
+* must be written in any of the languages that we support with our SDKs (Java, C#, Python, Ruby, PHP, Node, Go)
 * can make use of any existing open source libraries that don't directly address the problem statement (use your best judgement).
 
 Send us:
